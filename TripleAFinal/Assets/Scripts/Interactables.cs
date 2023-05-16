@@ -3,7 +3,7 @@ using UnityEngine;
 public class Interactables : MonoBehaviour
 {
     // Public variables
-    public float pickupRange = 3f; // Maximum distance for object pickup
+    public float pickupRange = 1.2f; // Maximum distance for object pickup
     public Transform holdPosition; // Position where object is held
     public LayerMask pickupLayer; // Layer that contains pickuppable objects
     public KeyCode interactKey = KeyCode.E;
