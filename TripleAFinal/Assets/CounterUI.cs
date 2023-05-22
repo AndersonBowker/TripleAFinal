@@ -25,7 +25,7 @@ public class CounterUI : MonoBehaviour
         UpdateCounterText();
     }
 
-    private void UpdateCounterText()
+    public void UpdateCounterText()
     {
         counterText.text = "Money Earned: " + counter.ToString();
     }

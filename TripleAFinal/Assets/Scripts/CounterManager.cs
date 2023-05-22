@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class CounterManager: MonoBehaviour
 {
-    public static CounterManager Instance { get; private set; }
-
-    private int counter = 0;
-    private CounterUI counterUI;
+    public static int counter = 0;
+    public static CounterUI counterUI;
 
     private void Awake()
     {
-        if (Instance = null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-
         counterUI = FindObjectOfType<CounterUI>();
     }
 
-    public void IncreaseCounter()
+    public static void IncreaseCounter()
     {
         counter++;
         counterUI.UpdateCounter(counter);

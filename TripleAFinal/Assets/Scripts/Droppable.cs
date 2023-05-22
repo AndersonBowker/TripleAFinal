@@ -5,27 +5,32 @@ using UnityEngine;
 public class Droppable : MonoBehaviour
 {
     private bool isDropped = false;
+    private CounterManager counterManager;
+    public CounterUI counterUI;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        counterManager.GetComponent<CounterManager>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("SpecificPlace") && !isDropped)
         {
             isDropped = true;
-            // Increase the counter
-            CounterManager.Instance.IncreaseCounter();
-            // Make the droppable object disappear
             gameObject.SetActive(false);
+            // Increase the counter
+            CounterManager.IncreaseCounter();
+            // Make the droppable object disappear
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
