@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
         Invoke("SpawnPrefab", spawnTimer);
     }
 
-    private void SpawnPrefab()
+    public void SpawnPrefab()
     {
         // Randomly select a prefab from the array
         int randomIndex = Random.Range(0, prefabsToSpawn.Length);

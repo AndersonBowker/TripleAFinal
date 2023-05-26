@@ -133,4 +133,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee770fec36267c74081ad4b1c47aca17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePositionTransform: {fileID: 0}
+  movePositionTransform: {fileID: 8390524962879502985, guid: a4feb397b1676ae4c89efdbf0b350922, type: 3}
